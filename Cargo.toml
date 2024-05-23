@@ -1,0 +1,26 @@
+[package]
+name = "rust-image-manip"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num = "0.4.0"
+rand = "0.8.5"
+rustfft = "6.1.0"
+thiserror = "1"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread", "full"] }
+image = { version = "0.24.8", default-features = false, features = [
+  "gif",
+  "jpeg",
+  "ico",
+  "png",
+  "pnm",
+  "tga",
+  "tiff",
+  "webp",
+  "bmp",
+  "hdr",
+  "dxt",
+  "dds",
+  "farbfeld",
+] }
